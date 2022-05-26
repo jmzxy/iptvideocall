@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PeerChat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="images/record.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <input type="checkbox" id="btn" hidden>
+        <label for="btn" class="menu-btn">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </label>
+        <nav id="sidebar">
+            <div class="title">Settings</div>
+            <ul class="list-items">
+                <li><a href="lobby.html"><i class="fas fa-home"></i>Lobby</a></li>
+                <li><a href="#"><i class="fas fa-comments"></i>Chat</a></li>
+                <li><a href="#"><i class="fas fa-stream"></i>Features</a></li>
+                <li><a href="#"><i class="fas fa-globe-asia"></i>Languages</a></li>
+                <div class="icons">
+                    <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="www.youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="videos">
+        <video class="video-player" id="user-1" autoplay playsinline></video>
+        <video class="video-player" id="user-2" autoplay playsinline></video>
+    </div>
+
+    <div id="controls">
+
+        <div class="control-container" id="camera-btn">
+            <img src="icons/camera.png" />
+        </div>
+
+        <div class="control-container" id="mic-btn">
+            <img src="icons/mic.png" />
+        </div>
+
+        <a href="lobby.html">
+            <div class="control-container" id="leave-btn">
+                <img src="icons/phone.png" />
+            </div>
+        </a>
+
+    </div>
+
+</body>
+<script src='agora-rtm-sdk-1.4.4.js'></script>
+<script src='main.js'></script>
+
+</html>
